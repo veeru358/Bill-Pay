@@ -11,7 +11,7 @@ node {
         parameters([string(defaultValue: 'DEV', description: 'env name', name: 'environment', trim: false)])
     ])
     stage('Checkout SCM'){
-        git branch: 'master', credentialsId: 'github-creds', url: 'https://github.com/gouthamchilakala/PetClinic'
+        git branch: 'master', credentialsId: 'github-creds', url: 'https://https://github.com/veeru358/Bill-Pay'
     }
     stage('Read praram'){
         echo "The environment chosen during the Job execution is ${params.environment}"
